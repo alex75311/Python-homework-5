@@ -1,4 +1,4 @@
-with open('input_text.txt', 'w') as f:
+with open('input_text.txt', 'w', encoding='utf-8') as f:
     while True:
         usr_str = input('Введите строку для записи в файл\n')
         if usr_str:
