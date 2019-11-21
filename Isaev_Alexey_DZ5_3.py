@@ -6,7 +6,6 @@ for idx, el in enumerate(str_list):
     el = el.split(':')
     lastname = el[0]
     zp = int(el[1].splitlines()[0])
-    # print(lastname, zp)
     if zp < 20000:
         print(f'{lastname} получает меньше 20000')
     sum_zp += zp
