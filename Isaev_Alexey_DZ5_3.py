@@ -10,9 +10,9 @@ with open('example_task_3.txt', 'r', encoding='utf-8') as f:
 sum_zp = 0
 for idx, el in enumerate(str_list):
     el = el.split(':')
-    lastname = el[0]
+    last_name = el[0]
     zp = int(el[1].splitlines()[0])
     if zp < 20000:
-        print(f'{lastname} получает меньше 20000')
+        print(f'{last_name} получает меньше 20000')
     sum_zp += zp
 print(f'Средняя зарплата составляет {sum_zp / len(str_list)}')
